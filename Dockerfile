@@ -12,4 +12,8 @@ FROM openshift/jenkins-1-centos7
 
 MAINTAINER Robert Greathouse <cyotee@gmail.com>
 
+USER root
+
 RUN yum install -y docker
+
+USER 1001
